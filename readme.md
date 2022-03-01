@@ -8,7 +8,7 @@
 This flashcard app is made by 2DT to give users some riddles that are funny and entertaining.
 
 ### App Walk-though
-<img src="https://imgflip.com/gif/671k3z" width=200><br>
+<img src="https://i.imgur.com/QciFqnG.gif" width=200><br>
 
 
 ## Required
