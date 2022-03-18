@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		79B154ED27E01F14009FDC8A /* CreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B154EC27E01F14009FDC8A /* CreationViewController.swift */; };
 		79DF01F227CAB1700007D17F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DF01F127CAB1700007D17F /* AppDelegate.swift */; };
 		79DF01F427CAB1700007D17F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DF01F327CAB1700007D17F /* SceneDelegate.swift */; };
 		79DF01F627CAB1700007D17F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DF01F527CAB1700007D17F /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		79B154EC27E01F14009FDC8A /* CreationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationViewController.swift; sourceTree = "<group>"; };
 		79DF01EE27CAB1700007D17F /* Week 2_LAB 1_Flashcards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Week 2_LAB 1_Flashcards.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79DF01F127CAB1700007D17F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79DF01F327CAB1700007D17F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				79DF01F327CAB1700007D17F /* SceneDelegate.swift */,
 				79DF01F527CAB1700007D17F /* ViewController.swift */,
 				79DF01F727CAB1700007D17F /* Main.storyboard */,
+				79B154EC27E01F14009FDC8A /* CreationViewController.swift */,
 				79DF01FA27CAB1720007D17F /* Assets.xcassets */,
 				79DF01FC27CAB1720007D17F /* LaunchScreen.storyboard */,
 				79DF01FF27CAB1720007D17F /* Info.plist */,
@@ -261,6 +264,7 @@
 				79DF01F627CAB1700007D17F /* ViewController.swift in Sources */,
 				79DF01F227CAB1700007D17F /* AppDelegate.swift in Sources */,
 				79DF01F427CAB1700007D17F /* SceneDelegate.swift in Sources */,
+				79B154ED27E01F14009FDC8A /* CreationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
