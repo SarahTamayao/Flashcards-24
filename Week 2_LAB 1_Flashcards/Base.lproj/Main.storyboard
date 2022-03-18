@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YHh-5l-5e8">
-                                <rect key="frame" x="45" y="55" width="324" height="75"/>
+                                <rect key="frame" x="33" y="32" width="349" height="98"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Welcome to 2DT
 Rapping Flashcard !!!</string>
@@ -112,8 +112,19 @@ Rapping Flashcard !!!</string>
                                     <action selector="ButtonNext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9VE-u0-TXS"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sns-Rx-p5q">
+                                <rect key="frame" x="33" y="776" width="349" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Tap card to show correct answer
+Click + to edit or add questions</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <color key="highlightedColor" red="1" green="0.87843137250000003" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="shadowColor" red="1" green="0.87843137250000003" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="0.0" height="3"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TpG-79-NIg">
-                                <rect key="frame" x="180" y="719" width="54" height="73"/>
+                                <rect key="frame" x="180" y="728" width="54" height="73"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="+">
@@ -123,17 +134,6 @@ Rapping Flashcard !!!</string>
                                     <segue destination="lGC-h3-Pir" kind="presentation" id="2ic-D7-WSq"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sns-Rx-p5q">
-                                <rect key="frame" x="33" y="776" width="349" height="86"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Tap card to show correct answer
-Click + to fix or add questions</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <color key="highlightedColor" red="1" green="0.87843137250000003" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="shadowColor" red="1" green="0.87843137250000003" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <size key="shadowOffset" width="0.0" height="3"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -166,15 +166,6 @@ Click + to fix or add questions</string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Question" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Hw-Ef-1mh">
-                                <rect key="frame" x="20" y="133" width="374" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="questionTextField:" destination="g0d-ay-lJa" eventType="editingDidEnd" id="zeL-uP-NaV"/>
-                                </connections>
-                            </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Answer" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k2T-ue-Uk6">
                                 <rect key="frame" x="20" y="197" width="374" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -194,7 +185,7 @@ Click + to fix or add questions</string>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7ZA-Sm-ZTG">
-                                <rect key="frame" x="38" y="280" width="338" height="155"/>
+                                <rect key="frame" x="38" y="220" width="338" height="155"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="E9O-sC-i8J">
                                     <rect key="frame" x="0.0" y="0.0" width="338" height="155"/>
@@ -243,6 +234,12 @@ Click + to fix or add questions</string>
                                 <color key="backgroundColor" red="0.98519486190000005" green="0.97230845669999999" blue="0.083482890379999994" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <blurEffect style="regular"/>
                             </visualEffectView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Question" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qj8-2y-iBO">
+                                <rect key="frame" x="20" y="132" width="374" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="et1-tI-bDE"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -265,7 +262,7 @@ Click + to fix or add questions</string>
                         <outlet property="answerTextField" destination="k2T-ue-Uk6" id="Gky-ju-K3R"/>
                         <outlet property="option1TextField" destination="OcZ-ST-a4s" id="rfc-z5-jvV"/>
                         <outlet property="option2TextField" destination="Sdv-4Z-guZ" id="YvQ-Bz-SwH"/>
-                        <outlet property="questionTextField" destination="6Hw-Ef-1mh" id="Xhh-lG-vw7"/>
+                        <outlet property="questionTextField" destination="qj8-2y-iBO" id="vrl-NI-DFC"/>
                         <outlet property="screen" destination="7ZA-Sm-ZTG" id="wo7-Yz-Zfo"/>
                     </connections>
                 </viewController>

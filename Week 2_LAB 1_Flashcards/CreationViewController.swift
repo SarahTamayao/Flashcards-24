@@ -6,12 +6,10 @@ class CreationViewController: UIViewController {
     func setGradientBackground() {
         let colorTop =  UIColor(red: 255.0/255.0, green: 149.0/255.0, blue: 0.0/255.0, alpha: 1.0).cgColor
         let colorBottom = UIColor(red: 255.0/255.0, green: 94.0/255.0, blue: 58.0/255.0, alpha: 1.0).cgColor
-                    
         let gradientLayer = CAGradientLayer()
         gradientLayer.colors = [colorTop, colorBottom]
         gradientLayer.locations = [0.0, 1.0]
         gradientLayer.frame = self.view.bounds
-                
         self.view.layer.insertSublayer(gradientLayer, at:0)
     }
     
@@ -36,6 +34,7 @@ class CreationViewController: UIViewController {
         let currentCard = flashcardsController.flashcards[flashcardsController.currentIndex]
         questionTextField.text = currentCard.question
         answerTextField.text = currentCard.answer
+        answerTextField.backgroundColor = .green
         option1TextField.text = currentCard.option1
         option2TextField.text = currentCard.option2
     }
@@ -76,8 +75,10 @@ class CreationViewController: UIViewController {
         }
         else {
             if (check == "add"){
+                if (flashcardsController.currentIndex == flashcardsController.flashcards.count - 1){
+                    flashcardsController.Next_Deco.isHidden = false
+                }
                 flashcardsController.updateFlashcard(question: questionText!, answer: answerText!, option1: option1!, option2: option2!)
-                flashcardsController.Next_Deco.isHidden = false
             }
             else if (check == "edit"){
                 flashcardsController.flashcards[flashcardsController.currentIndex] = Flashcard(question: questionText!, answer: answerText!, option1: option1!, option2: option2!)
