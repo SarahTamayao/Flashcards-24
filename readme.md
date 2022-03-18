@@ -4,12 +4,7 @@
 My flashcard app gives information about rappers and rapping culture.
 
 ### App Walk-though
-<<<<<<< HEAD
 <img src="https://i.imgur.com/M268hME.gif" width=200><br>
-=======
-<img src="https://i.imgur.com/wQLT0dD.gif" width=200><br>
->>>>>>> 3badf93ff945022a1f0232c11d81aba7a740f1f4
-
 
 ## Required
 - [x] User can open the creation screen
