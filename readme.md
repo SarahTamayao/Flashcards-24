@@ -4,7 +4,7 @@
 My flashcard app gives information about rappers and rapping culture.
 
 ### App Walk-though
-<img src="https://i.imgur.com/wQLT0dD.mp4" width=200><br>
+<img src="https://i.imgur.com/wQLT0dD.gif" width=200><br>
 
 
 ## Required
