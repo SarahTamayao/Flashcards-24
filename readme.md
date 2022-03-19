@@ -1,4 +1,5 @@
-## Lab 2 - 2DT Rapping Flashcards
+## 2DT Rapping Flashcards
+## Lab 2
 
 ### App Description
 My flashcard app gives information about rappers and rapping culture.
@@ -15,3 +16,22 @@ My flashcard app gives information about rappers and rapping culture.
 - [x] User gets an error if they try to create a new flashcard with no question or answer
 - [x] User can edit existing flashcard
 - [x] User can add multiple choice answers in the creation screen
+
+## Lab 1
+
+### App Description
+My flashcard app gives information about rappers and rapping culture.
+
+### App Walk-though
+<img src="https://i.imgur.com/M268hME.gif" width=200><br>
+
+## Required
+- [x] Create New Project in Xcode
+- [x] Add a view for the front side of the flashcard to display the question
+- [x] Add a view for the back side of the flashcard to display the answer
+- [x] Build in logic to show the answer side when the card is tapped
+- [x] Push code to GitHub
+## Optional
+- [x] Toggle the flashcard between the question side and the answer side
+- [x] Style the question and answer side of the card to better distinguish between the two sides
+- [x] Add selectable multiple choice answers beneath the card
