@@ -12,49 +12,41 @@ class CreationViewController: UIViewController {
         gradientLayer.frame = self.view.bounds
         self.view.layer.insertSublayer(gradientLayer, at:0)
     }
-    
+    // Decoration
     @IBOutlet weak var questionTextField: UITextField!
     @IBOutlet weak var answerTextField: UITextField!
     @IBOutlet weak var option1TextField: UITextField!
     @IBOutlet weak var option2TextField: UITextField!
-    @IBOutlet weak var screen: UIVisualEffectView!
-    
-    @IBOutlet weak var Edit_Deco: UIButton!
-    @IBOutlet weak var Add_Deco: UIButton!
-    
+ 
+    // Declare main screen
     var flashcardsController: ViewController!
-    
-    @IBAction func buttonEdit(_ sender: Any) {
-        screen.isHidden = true
-        questionTextField.isHidden = false
-        answerTextField.isHidden = false
-        option1TextField.isHidden = false
-        option2TextField.isHidden = false
-        check = "edit"
-        let currentCard = flashcardsController.flashcards[flashcardsController.currentIndex]
-        questionTextField.text = currentCard.question
-        answerTextField.text = currentCard.answer
-        answerTextField.backgroundColor = .green
-        option1TextField.text = currentCard.option1
-        option2TextField.text = currentCard.option2
-    }
-    @IBAction func buttonAdd(_ sender: Any) {
-        screen.isHidden = true
-        questionTextField.isHidden = false
-        answerTextField.isHidden = false
-        option1TextField.isHidden = false
-        option2TextField.isHidden = false
-        check = "add"
-    }
-    
+    // Initial screen
     override func viewDidLoad() {
         setGradientBackground()
         super.viewDidLoad()
-        screen.backgroundColor = UIColor(red: 0xf7/255, green: 0xed/255, blue: 0xe2/255, alpha: 1.0)
-        questionTextField.isHidden = true
-        answerTextField.isHidden = true
-        option1TextField.isHidden = true
-        option2TextField.isHidden = true
+  
+        questionTextField.frame.size.height = 40
+        
+        let alert = UIAlertController(title: "EDIT or ADD", message: "Edit current card or add new card?", preferredStyle: .alert)
+        let editAction = UIAlertAction(title: "Edit", style: .destructive) { action in
+            let currentCard = self.flashcardsController.flashcards[self.flashcardsController.currentIndex]
+            self.questionTextField.text = currentCard.question
+            self.answerTextField.text = currentCard.answer
+            self.answerTextField.backgroundColor = .green
+            self.option1TextField.text = currentCard.option1
+            self.option2TextField.text = currentCard.option2
+            self.check = "edit"
+        }
+        let addAction = UIAlertAction(title: "Add", style: .destructive){ action in
+            self.questionTextField.isHidden = false
+            self.answerTextField.isHidden = false
+            self.option1TextField.isHidden = false
+            self.option2TextField.isHidden = false
+            self.check = "add"
+        }
+        alert.addAction(editAction)
+        alert.addAction(addAction)
+        present(alert, animated: true)
     }
     
     @IBAction func didTapOnCancel(_ sender: Any) {
@@ -79,11 +71,12 @@ class CreationViewController: UIViewController {
                     flashcardsController.Next_Deco.isHidden = false
                 }
                 flashcardsController.updateFlashcard(question: questionText!, answer: answerText!, option1: option1!, option2: option2!)
+                flashcardsController.saveAllFlashcardsToDisk()
             }
             else if (check == "edit"){
                 flashcardsController.flashcards[flashcardsController.currentIndex] = Flashcard(question: questionText!, answer: answerText!, option1: option1!, option2: option2!)
                 flashcardsController.setupAnswers(position: flashcardsController.currentIndex)
-                flashcardsController.setupOptions()
+                flashcardsController.saveAllFlashcardsToDisk()
             }
             dismiss(animated: true)
         }
