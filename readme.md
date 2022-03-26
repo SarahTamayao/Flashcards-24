@@ -1,11 +1,10 @@
 # 2DT Rapping Flashcards
 ## Lab 3
-=======
+
 ### App Description
 My flashcard app gives information about rappers and rapping culture.
 
 ### App Walk-though
-<<<<<<< HEAD
 <img src="https://i.imgur.com/Q8HiaqY.gif" width=300><br>
 
 ## Required
