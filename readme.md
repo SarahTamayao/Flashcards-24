@@ -1,11 +1,6 @@
-<<<<<<< HEAD
 # 2DT Rapping Flashcards
 ## Lab 3
 =======
-## 2DT Rapping Flashcards
-## Lab 2
->>>>>>> b494ce8ac95adbaf6d09e098d8da37e1afeffc23
-
 ### App Description
 My flashcard app gives information about rappers and rapping culture.
 
@@ -28,10 +23,7 @@ My flashcard app gives information about rappers and rapping culture.
 My flashcard app gives information about rappers and rapping culture.
 
 ### App Walk-though
-<img src="https://i.imgur.com/M268hME.gif" width=300><br>
-=======
 <img src="https://i.imgur.com/Q1lnuaM.gif" width=200><br>
->>>>>>> b494ce8ac95adbaf6d09e098d8da37e1afeffc23
 
 ## Required
 - [x] User can open the creation screen
