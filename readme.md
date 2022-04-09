@@ -20,22 +20,13 @@ My flashcard app gives some basic information and knowledge about rappers and ra
 - [x] Correct answer in multiple choice should be random
 
 ## Lab 3
-<<<<<<< HEAD
-=======
-## 2DT Rapping Flashcards
-## Lab 2
-=======
->>>>>>> e169736eaa164aa9c8e9b7645e99f7dba054e34b
 
 ### App Description
 My flashcard app gives information about rappers and rapping culture.
 
 ### App Walk-though
-<<<<<<< HEAD
 <img src="https://i.imgur.com/Q8HiaqY.gif" width=300><br>
-=======
 <img src="https://i.imgur.com/I1r1cyq.gif" width=300><br>
->>>>>>> e169736eaa164aa9c8e9b7645e99f7dba054e34b
 
 ## Required
 - [x] User can browse through multiple flashcards
@@ -52,10 +43,6 @@ My flashcard app gives information about rappers and rapping culture.
 My flashcard app gives information about rappers and rapping culture.
 
 ### App Walk-though
-<<<<<<< HEAD
-<img src="https://i.imgur.com/M268hME.gif" width=300><br>
-=======
->>>>>>> e169736eaa164aa9c8e9b7645e99f7dba054e34b
 <img src="https://i.imgur.com/Q1lnuaM.gif" width=200><br>
 
 ## Required
