@@ -75,7 +75,7 @@ class CreationViewController: UIViewController {
             }
             else if (check == "edit"){
                 flashcardsController.flashcards[flashcardsController.currentIndex] = Flashcard(question: questionText!, answer: answerText!, option1: option1!, option2: option2!)
-                flashcardsController.setupAnswers(position: flashcardsController.currentIndex)
+                flashcardsController.setupAnswers()
                 flashcardsController.saveAllFlashcardsToDisk()
             }
             dismiss(animated: true)

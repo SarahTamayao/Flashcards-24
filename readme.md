@@ -1,16 +1,33 @@
-<<<<<<< HEAD
 # 2DT Rapping Flashcards
+## Lab 4
+
+### App Description
+My flashcard app gives some basic information and knowledge about rappers and rapping (Hip-Hop) culture.
+
+### App Walk-though
+<img src="https://i.imgur.com/u8WVrSg.gif" width=200><br>
+
+## Required
+- [x] User should see the app icon 
+- [x] User should see a splash screen
+- [x] User should see an flip animation when revealing the answer
+- [x] User should see a slide animation when going to the next flashcard
+- [x] User should see a slide animation when going to the previous flashcard
+- [x] Push code to GitHub
+## Optional
+- [x] User should see a nicer flaschard with rounded corners, shadows, and animating when showing the first time
+- [x] User should see all views properly layout when using the app on a phone of different sizes
+- [x] Correct answer in multiple choice should be random
+
 ## Lab 3
 =======
 ## 2DT Rapping Flashcards
 ## Lab 2
->>>>>>> b494ce8ac95adbaf6d09e098d8da37e1afeffc23
 
 ### App Description
 My flashcard app gives information about rappers and rapping culture.
 
 ### App Walk-though
-<<<<<<< HEAD
 <img src="https://i.imgur.com/Q8HiaqY.gif" width=300><br>
 
 ## Required
@@ -29,9 +46,7 @@ My flashcard app gives information about rappers and rapping culture.
 
 ### App Walk-though
 <img src="https://i.imgur.com/M268hME.gif" width=300><br>
-=======
 <img src="https://i.imgur.com/Q1lnuaM.gif" width=200><br>
->>>>>>> b494ce8ac95adbaf6d09e098d8da37e1afeffc23
 
 ## Required
 - [x] User can open the creation screen
