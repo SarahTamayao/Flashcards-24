@@ -25,7 +25,6 @@ My flashcard app gives some basic information and knowledge about rappers and ra
 My flashcard app gives information about rappers and rapping culture.
 
 ### App Walk-though
-<img src="https://i.imgur.com/Q8HiaqY.gif" width=300><br>
 <img src="https://i.imgur.com/I1r1cyq.gif" width=300><br>
 
 ## Required
