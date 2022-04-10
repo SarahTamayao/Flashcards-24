@@ -24,6 +24,7 @@ class ViewController: UIViewController {
     
     var flashcards = [Flashcard]() // array to hold our flashcards
     var currentIndex = 0 // current question
+    var num_back_screen = 8
     
     // Initialization flashcard questions, will fix the code soon
     let card1 = Flashcard(question: "In March 2022, which artist became the most certified artist for singles in RIAA Gold & Platinum program history?", answer: "Eminem", option1: "Drake", option2: "Kanye West")
@@ -66,6 +67,7 @@ class ViewController: UIViewController {
         Question.isHidden = false
         animateCardOut()
         updateNextPrevButtons()
+        Screen.backgroundColor = UIColor(patternImage: UIImage(named: "back_screen\(Int.random(in: 1..<(num_back_screen+1)))")!)
     }
     @IBAction func ButtonPrev(_ sender: Any) {
         if (currentIndex > 0){
@@ -74,6 +76,7 @@ class ViewController: UIViewController {
             animateCardOut_Prev()
             updateNextPrevButtons()
         }
+        Screen.backgroundColor = UIColor(patternImage: UIImage(named: "back_screen\(Int.random(in: 1..<(num_back_screen+1)))")!)
     }
 // Delete a flashcard
     @IBAction func ButtonDelete(_ sender: Any) {
@@ -150,17 +153,14 @@ class ViewController: UIViewController {
         buttons[third]?.setTitle(currentFlashcard.option2, for: .normal)
         //------------------------------------------------------
         // Button 1 setup
-        Button1_Deco.titleLabel?.textColor = .black
         Button1_Deco.layer.cornerRadius = 5
         Button1_Deco.clipsToBounds = true
         Button1_Deco.layer.borderWidth = 0
         // Button 2 setup
-        Button2_Deco.titleLabel?.textColor = .black
         Button2_Deco.layer.cornerRadius = 5
         Button2_Deco.clipsToBounds = true
         Button2_Deco.layer.borderWidth = 0
         // Button 3 setup
-        Button3_Deco.titleLabel?.textColor = .black
         Button3_Deco.layer.cornerRadius = 5
         Button3_Deco.clipsToBounds = true
         Button3_Deco.layer.borderWidth = 0
@@ -237,11 +237,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     // Back Screen set up
-        Screen.backgroundColor = UIColor(red: 0xf7/255, green: 0xf8/255, blue: 0xf8/255, alpha: 1.0)
+        Screen.backgroundColor = UIColor(patternImage: UIImage(named: "back_screen1")!)
         Screen.layer.shadowRadius = 15.0
         Screen.layer.shadowOpacity = 1
     // Question set up
-        Question.textColor = .black
+        Question.textColor = .white
         Question.layer.cornerRadius = 10 // border radius
         Question.clipsToBounds = true // border radius
         Question.backgroundColor = UIColor(red: 0x80/255, green: 0xcb/255, blue: 0xc4/255, alpha: 1.0)
@@ -258,7 +258,6 @@ class ViewController: UIViewController {
         Reset_Deco.clipsToBounds = true
     // Button NEXT setup
         Next_Deco.isHidden = true
-    // Button PREV setup
         
         currentIndex = 0
         readSavedFlashcards()
