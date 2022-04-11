@@ -1,8 +1,13 @@
 # 2DT Rapping Flashcards
+## Extra Properties
+- [x] Background displays random images
+- [ ] Reset the game
+- [ ] A timer to limit user's time on each question
+
 ## Lab 4
 
 ### App Description
-My flashcard app gives some basic information and knowledge about rappers and rapping (Hip-Hop) culture.
+My flashcard app gives some basic information and knowledge about rappers and rapping (Hip-Hop) culture. My code is 100% in Swift and I use UIKit throughout the code. Users can edit and add more questions and all of them will be saved forever (unless they delete them).
 
 ### App Walk-though
 #### 📱 My code running on iPhone 11 Pro max
