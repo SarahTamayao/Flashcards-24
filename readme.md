@@ -5,9 +5,9 @@
 My flashcard app gives some basic information and knowledge about rappers and rapping (Hip-Hop) culture.
 
 ### App Walk-though
-  # My code running on iPhone 11 Pro max
+#### My code running on iPhone 11 Pro max
 <img src="https://i.imgur.com/u8WVrSg.gif" width=200><br>
-  # My code running on iPad 9th Gen
+#### My code running on iPad 9th Gen
 <img src="https://i.imgur.com/RHZplKu.gif" width=200><br>
 
 ## Required
